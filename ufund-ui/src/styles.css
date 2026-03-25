@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+      /* cursor: url('assets/cigcat2.gif'), auto; */
+
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: large;
+}
+html, body { height: 100%; }
+
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+  background-image: url('assets/loginbg.gif');
+  /* background-repeat: repeat; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #132b30
+}
+
+
+
+.mat-mdc-dialog-container, .mat-mdc-dialog-surface {
+  --mdc-shape-medium: 0px !important;
+  border-radius: 5px !important;
+  background-color: #98dce5 !important;
+}
+
+button:hover:not(.charting button) {
+  cursor: pointer;
+  color: #193034!important;
+  background-color: #a1dfe8 !important;
+  border-color: #7db5be !important;
+  box-shadow: 5px 5px 5px rgba(48, 87, 87, 0.5);
+  
+}
+
+button:not(.charting button)  {
+  color: #eafcff !important;
+  background-color: #056774 !important;
+  border-color: #186d79 !important;
+}

@@ -1,0 +1,20 @@
+
+<div class = "ConfirmationButtons">@if (getPopType() == Types.CONFIRMATION){
+    <div class = "ConfirmMessage">{{getMessage()}}</div>
+    <img src="assets/piss.gif">
+    <div class="buttons">
+        <button (click)="onConfirm($event)"> Confirm </button>
+        <button (click)="onCancel($event)"> Cancel </button>
+    </div>
+}</div>
+<div class = "MessageButtons">@if (getPopType() == Types.SUCCESS_MESSSAGE){
+    <div class = "SuccessMessage">{{getMessage()}}</div>
+    @if (getSuccessType() == "Checkout" ) {
+        <img class="checkout" src="assets/kickflip.gif">
+    } @else if (getSuccessType() == "Admin") {
+        <img class="admin" src= "assets/cigcat2.gif">
+    } @else {
+        <img class="admin" src= "assets/stack.gif">
+    }
+    <button (click)="onClose($event)"> Close </button>
+}</div>

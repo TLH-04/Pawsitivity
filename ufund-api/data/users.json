@@ -1,0 +1,55 @@
+[ {
+  "u-type" : "SuperAdmin",
+  "password" : "xlYv21le0AQlc9pA2N2VokHTZUeN9Yudpb1UoObhG2q2uQRCMoYP0ZFZksa/viwNDhgSsnSPqJiH0pADcNypFw==",
+  "hashed" : true,
+  "type" : "SUPER",
+  "name" : "Admin"
+}, {
+  "u-type" : "Admin",
+  "name" : "Hamburger",
+  "password" : "Wz7zN92M4lWVCCdvWCaXyhvUinCJPmk0pKXj6GT7WjsuMpivOUBfGbf8zmrlJsUBfRN3tx3WzP1XtHAGIJzuTQ==",
+  "hashed" : true,
+  "type" : "ADMIN"
+}, {
+  "u-type" : "Helper",
+  "name" : "Hotdog",
+  "password" : "jCqHET9TIEiJ1kPxcoXCO33bN8RsH4gRioY0IrwOi53eUVqSK+9ycN5+GgVQC9zIh63jq8MtqtHK4WFJcpnz5w==",
+  "basket" : {
+    "needsMap" : {
+      "1" : 106,
+      "2" : 1
+    }
+  },
+  "hashed" : true,
+  "type" : "HELPER",
+  "contributedNeeds" : 2
+}, {
+  "u-type" : "Helper",
+  "name" : "Meghan!",
+  "password" : "wuemTqe12fctFu47qcX6ffzx1BO/QHmySApjwcMigwtbC4JoW0HhKH7ZFgNMOUeb6k7+pvrg/N22eZbAi4rgiw==",
+  "basket" : {
+    "needsMap" : {
+      "2" : 15,
+      "3" : 4
+    }
+  },
+  "hashed" : true,
+  "type" : "HELPER",
+  "contributedNeeds" : 0
+}, {
+  "u-type" : "Admin",
+  "name" : "Trinity",
+  "password" : "6ou1IsFjevGl17I3UwiX1Gh/vky+Y2e/7kt+9Fg4pfMLWwx04xW8AYu89E8iu036aThHXlDaMRI9wMiGkbJjhQ==",
+  "hashed" : true,
+  "type" : "ADMIN"
+}, {
+  "u-type" : "Helper",
+  "name" : "meghan",
+  "password" : "TwkrTD4nQ+vRlhdpwnGRV1C8Fp/+3ypRsFruKfzSDqWkRzS3BB67GvgdUICOqhOlbRE/WCPC1y0GUYLRPjYpLw==",
+  "basket" : {
+    "needsMap" : { }
+  },
+  "hashed" : true,
+  "type" : "HELPER",
+  "contributedNeeds" : 2
+} ]

@@ -1,0 +1,245 @@
+/* HeroSearch private styles */
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+
+}
+
+input:focus {
+  outline: #336699 auto 1px;
+}
+
+li {
+  list-style-type: none;
+}
+.search-result li a {
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+  padding: .5rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+
+.search-result li a:hover {
+  background-color: #435A60;
+  color: white;
+}
+
+ul.search-result {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+h3 {
+  margin-left: 20px;
+}
+
+/* AppComponent's private CSS styles */
+h1 {
+  margin-bottom: 0;
+}
+button {
+  padding: .25rem;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+  background-color: #e8e8e8;
+  color: #3d3d3d;
+  border-radius: 8px;
+}
+
+button:hover {
+  color: white;
+  background-color: #42545C;
+}
+button:active {
+  background-color: black;
+}
+
+select {
+  padding: .25rem;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #e8e8e8;
+  color: #3d3d3d;
+  border-radius: 8px;
+  border-color:#3d3d3d;
+}
+
+.cupboard-search {
+  list-style: none;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.cupboard-search li {
+  margin-bottom: 12px;
+}
+
+.need-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.need-details {
+  padding-left: 20px;  
+}
+
+.group-button {
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+    margin-bottom: 10px;
+    justify-self: center;
+    padding-right: 10px;
+}
+
+.group-button input {
+  text-decoration: none;
+  background-color: #e8e8e8;
+  color: #3d3d3d;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  margin-right: 5px;
+  height: 1.9em;
+  width: 5em;
+}
+
+.group-button input:disabled {
+  cursor: not-allowed;
+}
+
+.group-button button {
+  padding: .3rem;
+  text-decoration: none;
+  background-color: #e8e8e8;
+  color: #3d3d3d;
+  border-radius: 8px;
+}
+
+.group-button button:hover {
+  color: white;
+  background-color: #42545C;
+}
+
+.group-button button:active {
+  background-color: black;
+}
+
+.group-button input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+.need-item {
+  border-left: 4px solid;
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin: 0px 10px;
+}
+
+#edit-btn {
+  text-decoration: none;
+  background-color: #e8e8e8;
+  color: #3d3d3d;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#list-btn {
+  margin-left: 20px;
+}
+
+#edit-btn:hover {
+  color: white;
+  background-color: #42545C;
+}
+
+#delist-btn {
+  text-decoration: none;
+  background-color: #e8e8e8;
+  color: #3d3d3d;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#delist-btn:hover {
+  color: white;
+  background-color: #42545C;
+}
+.volunteer, .monetary, .resource {
+  background-color: rgba(255, 255, 255, 0.863);
+  padding: 1em;
+}
+
+.need-details {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 7em;
+  margin-bottom: 1em;
+}
+
+.need-progress {
+  padding-top: 2em;
+}
+
+.volunteer {
+  border-color: rgb(95, 192, 205);
+}
+
+.volunteer > .need-header {
+  background-color: rgba(165, 244, 255, 0.717);
+}
+
+.monetary {
+  border-color: rgb(255, 141, 150);
+}
+
+.monetary > .need-header {
+  background-color: rgba(255, 224, 226, 0.701);
+}
+
+.resource {
+  border-color : rgb(255, 179, 125);
+}
+
+.resource > .need-header {
+  background-color: rgba(255, 238, 226, 0.719);
+}
+
+#search-box {
+  width: 35%;
+  height: 40px;
+  border-radius: 12px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+#return-cup {
+  margin-left: 30px;
+  padding: 15px 30px;
+}
+
+#currentNeeds, #unlisted-needs, #list-btn {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,152 @@
+[ {
+  "u-type" : "SuperAdmin",
+  "password" : "xlYv21le0AQlc9pA2N2VokHTZUeN9Yudpb1UoObhG2q2uQRCMoYP0ZFZksa/viwNDhgSsnSPqJiH0pADcNypFw==",
+  "hashed" : true,
+  "type" : "SUPER",
+  "name" : "Admin"
+}, {
+  "u-type" : "Admin",
+  "name" : "Boo",
+  "password" : "JzVjp8qPaSL8M607tiyLHhn5XIXN2TUZ6OlvOuazKOeWowr+q9ehk3tyjpUMRlNYMVkIdBTB+5lebt+e86Fp6Q==",
+  "hashed" : true,
+  "type" : "ADMIN"
+}, {
+  "u-type" : "Admin",
+  "name" : "Hamburger",
+  "password" : "Wz7zN92M4lWVCCdvWCaXyhvUinCJPmk0pKXj6GT7WjsuMpivOUBfGbf8zmrlJsUBfRN3tx3WzP1XtHAGIJzuTQ==",
+  "hashed" : true,
+  "type" : "ADMIN"
+}, {
+  "u-type" : "Helper",
+  "name" : "Helper",
+  "password" : "/9JdNqR4OWimziXU5C789yTXcT++8geVMNRuzPT1WSx66+m2ALmjb6GdRDMI8OXnEdVZqhVfLZYb4VRmxBg6jQ==",
+  "basket" : {
+    "needsMap" : { }
+  },
+  "hashed" : true,
+  "type" : "HELPER",
+  "contributedNeeds" : 0
+}, {
+  "u-type" : "Helper",
+  "name" : "Hotdog",
+  "password" : "jCqHET9TIEiJ1kPxcoXCO33bN8RsH4gRioY0IrwOi53eUVqSK+9ycN5+GgVQC9zIh63jq8MtqtHK4WFJcpnz5w==",
+  "basket" : {
+    "needsMap" : {
+      "4" : 2,
+      "5" : 55
+    }
+  },
+  "hashed" : true,
+  "type" : "HELPER",
+  "contributedNeeds" : 6
+}, {
+  "u-type" : "Helper",
+  "name" : "Meghan!",
+  "password" : "wuemTqe12fctFu47qcX6ffzx1BO/QHmySApjwcMigwtbC4JoW0HhKH7ZFgNMOUeb6k7+pvrg/N22eZbAi4rgiw==",
+  "basket" : {
+    "needsMap" : {
+      "2" : 15,
+      "3" : 4
+    }
+  },
+  "hashed" : true,
+  "type" : "HELPER",
+  "contributedNeeds" : 0
+}, {
+  "u-type" : "Helper",
+  "name" : "Mom",
+  "password" : "hfoOerR+UPJ0X9p0Wm7zDVFZ8NGeGjFo55ur4YzKU3cd3iO7hJZH3stRKBz7ISUkm85ZRvJ/Ba9zsVFrDBUgBQ==",
+  "basket" : {
+    "needsMap" : { }
+  },
+  "hashed" : true,
+  "type" : "HELPER",
+  "contributedNeeds" : 1
+}, {
+  "u-type" : "Admin",
+  "name" : "NewAdmin",
+  "password" : "gCfowNnD84GdQabjoKgHbD31mmcklQuYVbkVTgeVwTdVOVUYKj0ozLV4xnUIXLDyawBUdxzDfTTEhT/NlkMVNg==",
+  "hashed" : true,
+  "type" : "ADMIN"
+}, {
+  "u-type" : "Helper",
+  "name" : "TestHelper",
+  "password" : "D5CSeAX1YhCXSsZYHAp2ctoy4Dtg0MB40VpS6ii0MLPJqw2ZhRbvvNPRiE6K44QdsZsTtVpJXeDXoA73oOQSVg==",
+  "basket" : {
+    "needsMap" : { }
+  },
+  "hashed" : true,
+  "type" : "HELPER",
+  "contributedNeeds" : 0
+}, {
+  "u-type" : "Admin",
+  "name" : "Trinity",
+  "password" : "6ou1IsFjevGl17I3UwiX1Gh/vky+Y2e/7kt+9Fg4pfMLWwx04xW8AYu89E8iu036aThHXlDaMRI9wMiGkbJjhQ==",
+  "hashed" : true,
+  "type" : "ADMIN"
+}, {
+  "u-type" : "Admin",
+  "name" : "dafasfa",
+  "password" : "LYpJ3FU/7EQ8Vzk6OG1yj8/Hr4yvnPOgMOeBaJhDp2nyZlst0pU8nFlsTnlmZ2aAOYdA07MnvrvgZURGNWVDRw==",
+  "hashed" : true,
+  "type" : "ADMIN"
+}, {
+  "u-type" : "Helper",
+  "name" : "demo1",
+  "password" : "necIZBJcpnVDMAu80yfN4c0tNYYvC4FMK4GfqKn1KykEx74SP/l7GnJmijlahyye7uZPdDIfpexbFR2vZIydUA==",
+  "basket" : {
+    "needsMap" : { }
+  },
+  "hashed" : true,
+  "type" : "HELPER",
+  "contributedNeeds" : 0
+}, {
+  "u-type" : "Admin",
+  "name" : "demo2",
+  "password" : "0tIU9X2MS0f5yWKJTOIOUz27mbBzsVxm+QBZXLZwhg6IFQ/DhHYae+vmOQdZx908KAn9YsHQEs9CpWQjcbbBLg==",
+  "hashed" : true,
+  "type" : "ADMIN"
+}, {
+  "u-type" : "Helper",
+  "name" : "fafasfas",
+  "password" : "08aRjPnfSK3ckZq9fFh7bKxKRNA85iqhg9Q7j5qmkoKxWwGpW5vjkcWdw9Ij46/nohDp2c+2JNLOZpeR4F4vvg==",
+  "basket" : {
+    "needsMap" : { }
+  },
+  "hashed" : true,
+  "type" : "HELPER",
+  "contributedNeeds" : 0
+}, {
+  "u-type" : "Helper",
+  "name" : "hello",
+  "password" : "FZIYKSRhatcE1bJlbqEqyhhknHo5h7H7ftG7ZgGCEtL3OH5JMbHN5ULz+W5ds94vdLRFcItdrY7ZaCadvjFzoQ==",
+  "basket" : {
+    "needsMap" : { }
+  },
+  "hashed" : true,
+  "type" : "HELPER",
+  "contributedNeeds" : 0
+}, {
+  "u-type" : "Helper",
+  "name" : "meghan",
+  "password" : "TwkrTD4nQ+vRlhdpwnGRV1C8Fp/+3ypRsFruKfzSDqWkRzS3BB67GvgdUICOqhOlbRE/WCPC1y0GUYLRPjYpLw==",
+  "basket" : {
+    "needsMap" : { }
+  },
+  "hashed" : true,
+  "type" : "HELPER",
+  "contributedNeeds" : 2
+}, {
+  "u-type" : "Helper",
+  "name" : "potato",
+  "password" : "NTk8RhFfvh3ZlvrEWCpEOns2dSnoMh9em2da3G0oh0FE54n6RgqmGSLnZdo5xfQqcGIfzpX4ZqkCBcW2iUdLgw==",
+  "basket" : {
+    "needsMap" : {
+      "4" : 2,
+      "5" : 100
+    }
+  },
+  "hashed" : true,
+  "type" : "HELPER",
+  "contributedNeeds" : 0
+} ]

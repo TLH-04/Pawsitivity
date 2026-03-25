@@ -1,0 +1,76 @@
+[ {
+  "id" : 1,
+  "senderId" : "Admin",
+  "content" : "Morning, everyone welcome our new admin HAMBURGER",
+  "createdAt" : "2025-11-13T02:20:54.283095900Z"
+}, {
+  "id" : 2,
+  "senderId" : "Hamburger",
+  "content" : "Hey glad to be here",
+  "createdAt" : "2025-11-13T02:22:36.226768400Z"
+}, {
+  "id" : 3,
+  "senderId" : "Trinity",
+  "content" : "I just updated the Dog Food Supplies need.",
+  "createdAt" : "2025-11-13T02:23:01.816771900Z"
+}, {
+  "id" : 4,
+  "senderId" : "Trinity",
+  "content" : "Can you check if the quantity looks right?",
+  "createdAt" : "2025-11-13T02:23:10.745397Z"
+}, {
+  "id" : 5,
+  "senderId" : "Hamburger",
+  "content" : "Yeah, looks good overall",
+  "createdAt" : "2025-11-13T02:23:31.596331800Z"
+}, {
+  "id" : 6,
+  "senderId" : "Hamburger",
+  "content" : "made small edits for typos",
+  "createdAt" : "2025-11-13T02:23:39.257364400Z"
+}, {
+  "id" : 7,
+  "senderId" : "Trinity",
+  "content" : "Ah, Thanks for catching that.",
+  "createdAt" : "2025-11-13T02:24:00.617580Z"
+}, {
+  "id" : 8,
+  "senderId" : "Trinity",
+  "content" : "I’ll relist the updated need to the cupboard",
+  "createdAt" : "2025-11-13T02:24:08.086131200Z"
+}, {
+  "id" : 9,
+  "senderId" : "Admin",
+  "content" : "Hey, Hamburger could you take a quick look at the Vet Checkup Fund",
+  "createdAt" : "2025-11-13T02:24:26.189365800Z"
+}, {
+  "id" : 10,
+  "senderId" : "Admin",
+  "content" : "I wasn’t sure if $500 was the right amount",
+  "createdAt" : "2025-11-13T02:24:37.258600600Z"
+}, {
+  "id" : 11,
+  "senderId" : "Trinity",
+  "content" : "reviewed it and changed it to $750",
+  "createdAt" : "2025-11-13T02:24:56.693866500Z"
+}, {
+  "id" : 12,
+  "senderId" : "Trinity",
+  "content" : "also edited the dog food need",
+  "createdAt" : "2025-11-13T02:25:02.003889900Z"
+}, {
+  "id" : 13,
+  "senderId" : "Hamburger",
+  "content" : "hey! i hope you this demo",
+  "createdAt" : "2025-11-13T17:46:01.707585Z"
+}, {
+  "id" : 14,
+  "senderId" : "Hamburger",
+  "content" : "hey bob how are you today",
+  "createdAt" : "2025-11-26T04:09:29.171677600Z"
+}, {
+  "id" : 15,
+  "senderId" : "Admin",
+  "content" : "im good bro",
+  "createdAt" : "2025-11-26T04:09:51.965108300Z"
+} ]

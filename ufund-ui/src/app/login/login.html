@@ -1,0 +1,52 @@
+<head>
+  <title>PAWSITIVITY - Login</title>
+</head>
+
+<div class="login-menu">
+  <form class="form">
+    @if (createaccount == false){  <!-- if in creating account mode -->
+      <h3>Login</h3>
+    } @else {
+      <h3>Create Account</h3>
+    }
+
+    <div class="flex-column">
+      <div class = "inner-form">
+          @if (errormessage !== '') {
+            <div class = "error">
+              {{errormessage}}
+            </div>
+          }
+
+        <div class = "success">
+          @if (systemmessage !== '') {
+            <p>{{systemmessage}}</p>
+          }
+        </div>
+
+        <label for="username"></label>
+        <input id="username" autocomplete="username" [formControl]="username" placeholder="Username">
+        <br>
+        <label for="password"></label>
+        <input type="password" id="password" autocomplete="password" [formControl]="password" placeholder="Password">
+      </div>
+
+      <div class="flex-row">
+        <button (click)="login($event)" [disabled]="username.invalid || password.invalid">
+          @if (createaccount == false){
+            Login
+          } @else {
+            Sign Up
+          }
+        </button>
+        <button (click)="switchtype()">
+        @if (createaccount == false){
+          Create Account?
+        } @else {
+          Login
+        }
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

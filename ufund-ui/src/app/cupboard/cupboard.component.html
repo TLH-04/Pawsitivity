@@ -1,0 +1,25 @@
+<head>
+  <title>PAWSITIVITY - Cupboard</title>
+</head>
+
+<div class="cupboard-menu">
+  <h1>Viewing Cupboard</h1>
+  <nav>
+    @if (isHelper()){
+      <button button (click)="pageTo('/basket')">View Basket</button>
+    } @else {
+      <button button (click)="pageTo('/need-creator')">Create Need</button>
+      <button button (click)="pageTo('/metrics-dashboard')">View Dashboard</button>
+    }
+    <button (click)="logout($event)">Logout</button>
+  </nav>
+</div>
+
+<app-cupboard-search></app-cupboard-search>
+
+<img src="https://media1.tenor.com/m/I_CtX8a_3XcAAAAC/rigby-cat.gif" alt="Fun Image" width="800">
+
+
+
+
+

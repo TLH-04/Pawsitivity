@@ -1,0 +1,60 @@
+/* AppComponent's private CSS styles */
+#title {
+    font-size: 3.125rem;
+    color: var(--gray-900);
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -0.125rem;
+    margin: 0;
+    /* Center the element and not interfere with flow of DOM */
+    position: absolute;
+    font-weight: bold;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: fit-content;
+  }
+
+nav a {
+  padding: 1rem;
+  text-decoration: none;
+  margin-top: 75px;
+  display: inline-block;
+  background-color: #e8e8e8;
+  color: #3d3d3d;
+  border-radius: 8px;
+  border: 2px solid #42545C;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #42545C;
+}
+nav a:active {
+  background-color: black;
+}
+
+#cupboard-button {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+img:hover {
+  filter: drop-shadow(0 0 12px hsl(191, 33%, 40%)) brightness(1.3);
+}
+
+.click-radius {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 20px auto;
+}
+
+.click-radius img{
+  width: 100%;  
+}

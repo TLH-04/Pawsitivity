@@ -1,0 +1,170 @@
+#metrics {
+  width: 100%; /*modify based on how wide the other admin stuff is*/
+  margin: 20px;
+}
+
+#top-user {
+  font-style: italic;
+}
+
+#pie-charts{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#pie-charts > * {
+  width: 50%;
+  margin: auto;
+}
+
+.standalone-graph {
+  display: flex;
+}
+
+.cupboard-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+
+.cupboard-menu h1 {
+  margin-bottom: 0px;
+  text-align: left;
+  width: 50%;
+}
+
+.cupboard-menu nav {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.cupboard-menu nav a {
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  background-color: #e8e8e8;
+  color: #3d3d3d;
+  border-radius: 8px;
+}
+
+.cupboard-menu nav a:hover {
+  color: white;
+  background-color: #42545C;
+}
+
+.cupboard-menu nav button {
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  background-color: #e8e8e8;
+  color: #3d3d3d;
+  border-radius: 8px;
+  cursor: pointer;
+  font: inherit;
+  display: inline-block;
+}
+
+.cupboard-menu nav button:focus {
+  outline: none;
+}
+
+.cupboard-menu nav button:hover {
+  color: white;
+  background-color: #42545C;
+}
+
+.need-metrics, .user-metrics {
+  padding: 20px;
+}
+
+.need-metrics details p {
+  position: relative;
+  z-index: 1;
+  margin-left: 20px;
+}
+
+.user-metrics details, .need-metrics details {
+  background-color: white;
+  border-left: 5px solid #ff8b8b;
+  /* width: 750px; */
+  border-radius: 8px;
+  padding: 20px 20px;
+}
+
+.user-metrics details summary, .need-metrics details summary{
+  font-weight: bold;
+  font-size: calc(1.00rem + 0.7vw);;
+  padding: 15px;
+  background-color: #ffe3e3;
+}
+
+.user-metrics details p {
+  position: relative;
+  z-index: 1;
+  margin-left: 20px;
+}
+
+#user-charts {
+  display: flex;
+}
+
+#user-charts > * {
+  width: 50%;
+}
+
+div {
+  padding-bottom: 25px;
+}
+
+button {
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  background-color: #e8e8e8;
+  color: #3d3d3d;
+  border-radius: 20px;
+  cursor: pointer;
+  font: inherit;
+  display: inline-block;
+}
+
+h2 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.form-label {
+  padding-top: 10px;
+  font-weight: 500;
+}
+
+.createAdmin {
+  background-color:rgba(122, 186, 194, 0.381);
+  border-radius: 10px;
+  padding: 5px;
+}
+.create-admin {
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+  color: inherit;
+  font-family: inherit;
+  margin-top: 10px;
+}
+
+.need-metrics details {
+  border-left: 5px solid #4f818a;
+}
+
+.need-metrics details summary {
+  background-color: #cbf8ff;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  color: white;
+  background-color: #42545C;
+}
+

@@ -1,0 +1,54 @@
+.ConfirmMessage, .SuccessMessage {
+    font-size: 20px;
+    text-align: center;
+    margin: 30px;
+    font-weight: 450;
+}    
+
+.ConfirmationButtons button, .MessageButtons button {
+  padding: 10px 20px;
+  margin-right: 15px;
+  border-radius: 5px;
+  background-color:  #1ca8ba;
+  border-color: #62dbeb;
+}
+
+.ConfirmationButtons, .MessageButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px auto;
+  background-color: #98dce5;
+}
+.MessageButtons {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.ConfirmationButtons button:nth-child(2):hover {
+  background-color: #FFADAD !important;
+  color: #491717 !important;
+  border-color: #ffdada !important;
+}
+
+.ConfirmationButtons img {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.MessageButtons img.checkout {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 400px;
+}
+
+.MessageButtons img.admin {      
+  width: 420px;  
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;   
+  margin-bottom: 15px;  
+}

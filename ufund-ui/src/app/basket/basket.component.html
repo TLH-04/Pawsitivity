@@ -1,0 +1,43 @@
+<head>
+  <title>PAWSITIVITY - Your Basket</title>
+</head>
+
+<div class="cupboard-menu">
+  <h1>Viewing Your Basket</h1>
+
+  <nav>
+    <button (click)="checkout($event)"  [disabled]="!canCheckout()">Checkout</button>
+    <button (click)="pageTo('/cupboard')">Return to Cupboard</button>
+    <button (click)="logout($event)">Logout</button>
+  </nav>
+</div>
+
+<div id="search-component">
+  @if (basket.needsMap) {
+    <ul class="cupboard-search">
+    @for (item of basket.needsMap | keyvalue; track item.key) {
+      @if (needs.get(item.key)){
+      
+        @let need = needs.get(item.key)!;
+        <li class="need-item" [ngClass]= "{ 'volunteer': need['need-type'] === 'Volunteer', 'monetary': need['need-type'] === 'Monetary', 'resource': need['need-type'] === 'Resource' } ">
+          <div class="need-header">
+            <div><strong>{{ need.name }}</strong> ({{ need['need-type'] }})</div>
+
+            <div class = "group-button">
+              <input type="number" [(ngModel)] = "selectedQuantity[need.id]" (change)="selectQuantity($event,need)">
+              <button style="margin-left: 8px;" (click)="editBasket(false,$event,need,selectedQuantity[need.id])">Update Quantity</button>
+            </div>
+          </div>
+
+          <div class="need-details">
+              <p class="need-desc">{{ need.description }}</p>
+              In Basket: {{ item.value }}<br>
+              Overall Progress: {{ need.progress }} / {{ need.goal }}
+          </div>
+          <button (click)="editBasket(true,$event,need,-item.value)">Remove From Basket</button>
+        </li>
+      }
+    }
+    </ul>
+  }
+</div>

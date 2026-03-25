@@ -1,0 +1,91 @@
+<div id="search-component">
+  <div class="searchbar">
+    <label for="search-box"></label>
+    <input #searchBox id="search-box" (keyup.enter)="search($event, searchBox.value)" placeholder="Search for Need"/>
+  </div>
+  @if (isAdmin() == true) {
+    <button id="list-btn" (click)="displayUnlisted()"> {{filterUnlisted ? 'Display Listed Needs' : 'Display Unlisted Needs'}}</button>
+  }
+
+  @if (filterUnlisted){
+    <h3 id="unlisted-needs">Unlisted Needs</h3>
+    @if (!delistedNeeds) {
+      <h3>There are Currently No Delisted Needs</h3>
+
+    } @else {
+      <ul class="cupboard-search">
+        @for (need of delistedNeeds; track need.id)
+        {
+          <li class="need-item" [ngClass]= "{ 'volunteer': need['need-type'] === 'Volunteer', 'monetary': need['need-type'] === 'Monetary', 'resource': need['need-type'] === 'Resource' } ">
+              <div class="need-header">
+                <div style="margin-left: 10px;"><strong>{{ need.name }}</strong> ({{ need['need-type'] }})</div>
+
+
+                <div class="group-button">
+                    <button id="edit-btn" (click)="editNeed($event,need)">Edit Need</button>
+                    <button id="delist-btn" (click)="relistNeed(need)">Relist Need</button>
+                </div>
+            </div>
+
+            <div class="need-details">
+              <p class="need-desc">{{ need.description }}</p>
+              <p class="need-progress">Progress: {{ need.progress }} / {{ need.goal }}</p>
+              @if (basket.needsMap[need.id] !== undefined){
+                  In basket: {{basket.needsMap[need.id]}}
+              }
+            </div>
+          </li>
+        }
+      </ul>
+    }
+
+  } @else {
+    @if (!searchPerformed) {
+      <h3 id="currentNeeds">Current Needs</h3>
+
+    } @else {
+      <h3>Search Results</h3>
+    }
+    <ul class="cupboard-search">
+      @if (needs) {
+        @for (need of listedNeeds; track need.id) {
+          <li class="need-item" [ngClass]= "{ 'volunteer': need['need-type'] === 'Volunteer', 'monetary': need['need-type'] === 'Monetary', 'resource': need['need-type'] === 'Resource' } "
+          [hidden]="autoDelist(need)">
+            <div class="need-header">
+              <div style="margin-left: 10px;"><strong>{{ need.name }}</strong> ({{ need['need-type'] }})</div>
+
+
+              <div class="group-button">
+                @if (isAdmin() == true){
+
+                  <button id="edit-btn" (click)="editNeed($event,need)">Edit Need</button>
+                  <button id="delist-btn" (click)="manualDelist(need)">Delist Need</button>
+
+                } @else if (isHelper() == true) {
+
+                  <input id="quantity" type="number" [disabled]="!canModify(need)" (change)="selectQuantity($event,need)" [(ngModel)] = "needQuantity[need.id]">
+                  <button [disabled]="!canModify(need) || getQuantity(need) <= 0" (click)="addToBasket($event,need)">Add to Basket</button>
+
+                }
+              </div>  
+          </div>
+
+          <div class="need-details">
+              <p class="need-desc">{{ need.description }}</p>
+              <p class="need-progress">Progress: {{ need.progress }} / {{ need.goal }}</p>
+              @if (basket.needsMap[need.id] !== undefined){
+                  In basket: {{basket.needsMap[need.id]}}
+              }
+
+          </div>
+          </li>
+        }
+      }
+    </ul>
+  }
+
+  @if (searchPerformed) {
+    <button id="return-cup" (click)="goBack()">Return to Cupboard</button>
+  }
+
+</div>

@@ -1,0 +1,94 @@
+#need-editor-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 650;
+    text-shadow: -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+
+#need-editor-form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    background-color: rgba(8, 104, 117, 0.8);
+    border-radius: 20px;
+    padding: 0.7rem 1rem;
+    border: 3px solid white;
+    font-weight:500;
+    /* Below is for managing text coloring */
+    color:#F6F4F4;
+    /* text-shadow: -1px -1px 0 #000,
+               1px -1px 0 #000,
+               -1px 1px 0 #000,
+               1px 1px 0 #000; */
+}
+
+.form-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    padding: 2px;
+}
+
+input {
+    margin-top: 5px;
+}
+
+button {
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  background-color: #e8e8e8;
+  color: #3d3d3d;
+  border-radius: 20px;
+  cursor: pointer;
+  font: inherit;
+  display: inline-block;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  color: white;
+  background-color: #42545C;
+}
+
+.form-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+button:disabled {
+    color: #3d3d3d;
+    cursor: not-allowed;
+    background-color: #3d3d3d !important;
+}
+
+button:disabled:hover {
+    color: #3d3d3d;
+    cursor: not-allowed;
+    background-color: #3d3d3d !important;
+}
+
+
+#deletebtn {
+  background-color: #FFADAD !important;
+  color: #491717 !important;
+  border-color: #ffdada !important;
+}
+
+#deletebtn:hover {
+    background-color: #A51D1D !important;
+    color: #FFFAFA !important;
+    border-color: #410707 !important;
+}

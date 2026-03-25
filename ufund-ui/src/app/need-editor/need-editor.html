@@ -1,0 +1,84 @@
+<head>
+  <title>PAWSITIVITY - Editor</title>
+</head>
+
+<div id="need-editor-form">
+  
+  <div class="row createAdmin d-flex align-items-center h-custom-2 px-3 pt-xl-0 mt-xl-n5">
+    <form d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5 [formGroup] ="needForm" (ngSubmit)="onSumbit($event)">
+      <h3 class="mb-1 pb-1" style="letter-spacing: 1px;">Need Editor</h3>
+      
+      <div data-mdb-input-init class="form-outline mb-2">
+        <label class="form-item row" for="name">Name:
+          <input type="text" id="name" formControlName="name" class="form-control form-control-lg" placeholder="Banananananas"/>
+        </label>
+      </div>
+
+      <div data-mdb-input-init class="form-outline mb-2">
+        <label class="form-item row" for="description">Description:
+          <input type="text" id="description" formControlName="desc" class="form-control form-control-lg" placeholder="yummy" />
+        </label>
+      </div>
+
+      <div data-mdb-input-init class="form-outline mb-2">
+        <label class="form-item row" for="goal">Goal:
+          <input type="number" id="goal" formControlName="goal" class="form-control form-control-lg" placeholder="quantity"/>
+        </label>
+      </div>
+
+      <div data-mdb-input-init class="form-outline mb-2">
+        <label class="form-item row" for="progress">Progress:
+          <input type="number" id="progress" formControlName="progress" class="form-control form-control-lg" placeholder="quantity"/>
+        </label>
+      </div>
+
+      <div data-mdb-input-init class="form-outline row">
+        <label class="form-item col" for="type">
+          Type:
+          </label>
+          <select id="type" formControlName="type" class="form-select form-select-lg mb-3 col">
+            @for (type of needtypes; track type) {
+              <option class="dropdown-item" [value]="type">{{ type }}</option>
+            }
+          </select>
+      </div>
+
+      <div data-mdb-input-init class="form-outline row">
+        <label for="listed" class="form-item">
+          Listed:
+          <input id="listed" type ="checkbox" formControlName="listed" class="form-check checkbox-lg">
+        </label>
+      </div>
+
+      <div class="form-btns">
+        <div>
+          <button type="submit" [disabled]="!isValid()" >
+            @if (createMode == true){
+              Create
+            } @else {
+              Confirm
+            }
+          </button>
+        </div>
+
+        @if (createMode == false){
+          <div>
+            <button id="deletebtn" type="button" (click)="onDelete($event)">Delete</button>
+          </div>
+
+          <div>
+            <button (click)="pageTo('/cupboard')">Return to Cupboard</button>
+          </div>
+         
+        } @else {
+          <div>
+            <button (click)="pageTo('/cupboard')">Return to Cupboard</button>
+          </div>
+       
+        }  
+        </div>
+
+    </form>
+  </div>
+
+</div>

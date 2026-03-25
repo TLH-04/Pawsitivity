@@ -1,0 +1,81 @@
+[ {
+  "need-type" : "Resource",
+  "id" : 1,
+  "name" : "Dog Food Supplies",
+  "description" : "We need dry food and canned meals for the dogs currently in the shelter.",
+  "goal" : 200,
+  "progress" : 94,
+  "listed" : true
+}, {
+  "need-type" : "Resource",
+  "id" : 2,
+  "name" : "Cat Litter Bags",
+  "description" : "Shelter cats go through litter fast — help us restock for the month.",
+  "goal" : 100,
+  "progress" : 60,
+  "listed" : true
+}, {
+  "need-type" : "Monetary",
+  "id" : 3,
+  "name" : "Veterinary Checkup Fund",
+  "description" : "Covers vaccinations, exams, and medication for newly rescued animals.",
+  "goal" : 500,
+  "progress" : 220,
+  "listed" : true
+}, {
+  "need-type" : "Volunteer",
+  "id" : 4,
+  "name" : "Weekend Dog Walkers",
+  "description" : "We need volunteers to help walk the dogs every Saturday morning.",
+  "goal" : 10,
+  "progress" : 4,
+  "listed" : true
+}, {
+  "need-type" : "Monetary",
+  "id" : 5,
+  "name" : "Kennel Maintenance Budget",
+  "description" : "Funds for repairing and repainting the dog kennels.",
+  "goal" : 800,
+  "progress" : 300,
+  "listed" : true
+}, {
+  "need-type" : "Resource",
+  "id" : 6,
+  "name" : "Blankets and Bedding",
+  "description" : "Winter is coming — we need warm blankets for the animals.",
+  "goal" : 50,
+  "progress" : 15,
+  "listed" : true
+}, {
+  "need-type" : "Monetary",
+  "id" : 7,
+  "name" : "Adoption Event Funding",
+  "description" : "Helps cover booth setup, banners, and refreshments for adoption drives.",
+  "goal" : 300,
+  "progress" : 100,
+  "listed" : false
+}, {
+  "need-type" : "Volunteer",
+  "id" : 8,
+  "name" : "Shelter Cleaning Crew",
+  "description" : "Join us for a weekend cleaning day to tidy up the shelter spaces.",
+  "goal" : 12,
+  "progress" : 9,
+  "listed" : true
+}, {
+  "need-type" : "Resource",
+  "id" : 9,
+  "name" : "Animal Toys and Enrichment",
+  "description" : "We’re running low on chew toys, cat trees, and play tunnels.",
+  "goal" : 30,
+  "progress" : 10,
+  "listed" : true
+}, {
+  "need-type" : "Monetary",
+  "id" : 10,
+  "name" : "Emergency Rescue Transport Fund",
+  "description" : "Supports gas and vehicle maintenance for emergency animal rescues.",
+  "goal" : 600,
+  "progress" : 400,
+  "listed" : true
+}]
